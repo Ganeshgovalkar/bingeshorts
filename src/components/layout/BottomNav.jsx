@@ -11,7 +11,7 @@ export default function BottomNav({ activeTab = 'home', onSelectTab }) {
   ];
 
   return (
-    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-sm z-40 bg-black/60 backdrop-blur-3xl border border-white/10 rounded-full px-3 py-3 flex items-center justify-around shadow-beautiful-lg">
+    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-sm z-40 bg-black/80 backdrop-blur-3xl border border-white/10 rounded-full px-2 py-2 flex items-center justify-around shadow-beautiful-lg">
       {tabs.map((tab) => {
         const Icon = tab.icon;
         const isActive = activeTab === tab.id;
@@ -20,15 +20,17 @@ export default function BottomNav({ activeTab = 'home', onSelectTab }) {
           <button
             key={tab.id}
             onClick={() => onSelectTab(tab.id)}
-            className={`relative flex flex-col items-center justify-center py-1 px-3 transition-spring cursor-pointer active:scale-90 ${
-              isActive ? 'text-[#9D4EDD] font-bold' : 'text-gray-400 hover:text-gray-200'
+            aria-label={tab.label}
+            aria-current={isActive ? 'page' : undefined}
+            className={`relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-3 transition-all cursor-pointer active:scale-95 ${
+              isActive ? 'text-[#f04a23] font-bold' : 'text-white/50 hover:text-white'
             }`}
           >
             {isActive && (
-              <span className="absolute -top-2 w-6 h-1 rounded-full bg-[#9D4EDD] shadow-[0_0_12px_rgba(157,78,221,0.7)]" />
+              <span className="absolute -top-1.5 w-6 h-1 rounded-full bg-[#f04a23] shadow-[0_0_12px_rgba(240,74,35,0.7)]" />
             )}
             <Icon className={`w-5 h-5 ${isActive ? 'scale-110' : ''} transition-transform duration-200`} />
-            <span className="text-[10px] mt-1 tracking-tight font-medium">{tab.label}</span>
+            <span className="text-[10px] mt-0.5 tracking-tight font-medium">{tab.label}</span>
           </button>
         );
       })}

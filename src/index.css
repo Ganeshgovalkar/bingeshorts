@@ -6,6 +6,10 @@
 
 :root {
   --color-neutral-dark: #090909;
+  --color-accent-primary: #f04a23;
+  --color-accent-hover: #ff5b32;
+  --color-surface-dark: #111116;
+  --color-elevated-dark: #181820;
 }
 
 @layer base {
@@ -18,6 +22,19 @@
     color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Global Keyboard Accessibility Focus Ring */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  /* High Contrast Text Selection */
+  ::selection {
+    background-color: var(--color-accent-primary);
+    color: #ffffff;
   }
 }
 
@@ -74,66 +91,17 @@
 }
 
 /* Ambient glow accents */
-.text-glow-violet {
-  text-shadow: 0 0 24px rgba(157, 78, 221, 0.65);
-}
-
 .text-glow-coral {
-  text-shadow: 0 0 24px rgba(255, 71, 87, 0.65);
-}
-
-.text-glow-lime {
-  text-shadow: 0 0 18px rgba(204, 255, 0, 0.55);
-}
-
-.border-glow-violet {
-  box-shadow: 0 0 20px rgba(157, 78, 221, 0.4);
+  text-shadow: 0 0 24px rgba(240, 74, 35, 0.65);
 }
 
 .border-glow-coral {
-  box-shadow: 0 0 20px rgba(255, 71, 87, 0.4);
-}
-
-.border-glow-lime {
-  box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+  box-shadow: 0 0 20px rgba(240, 74, 35, 0.4);
 }
 
 /* Physics-based easing transitions */
 .transition-spring {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Scroll reveal transition */
-.reveal {
-  opacity: 0;
-  transform: translateY(1.5rem);
-  filter: blur(0.25rem);
-  transition: 
-    opacity 700ms cubic-bezier(0.22, 0.61, 0.36, 1), 
-    transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1), 
-    filter 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
-}
-
-/* Page entrance keyframe */
-.hero-enter {
-  opacity: 0;
-  transform: translateY(1.5rem);
-  filter: blur(0.25rem);
-  animation: hero-in 800ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-}
-
-@keyframes hero-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
 }
 
 /* Accessible reduced motion */
