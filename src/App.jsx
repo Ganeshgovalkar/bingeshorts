@@ -401,6 +401,10 @@ export default function App() {
             onSelectDrama={setSelectedDrama} 
             onToggleBookmark={handleToggleBookmark} 
             onPlayEpisode={handlePlayEpisode}
+            onNavigateDiscover={() => {
+              resetSubViews();
+              setActiveTab('discover');
+            }}
           />
         );
       case 'profile':
