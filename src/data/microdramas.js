@@ -12,17 +12,60 @@ export const MICRODRAMAS = [
     tags: ["Romance", "Emotional", "Late Night"],
     poster: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-young-couple-walking-in-a-park-at-night-42283-large.mp4",
     badgeType: "trending",
     badge: "TRENDING",
     rating: "4.9",
     views: "2.4M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The First Night", duration: "8 min", description: "Maya notices the same stranger waiting for the last train.", locked: false, progress: 100 },
-      { id: 2, title: "Missed Call", duration: "7 min", description: "A phone rings between them. Neither wants to answer it.", locked: true },
-      { id: 3, title: "Same Train", duration: "9 min", description: "They finally speak. Neither tells the truth.", locked: true },
-      { id: 4, title: "Don't Go Yet", duration: "8 min", description: "Maya misses her train for the first time.", locked: true, progress: 68 },
-      { id: 5, title: "Platform 6", duration: "7 min", description: "Someone else has been watching them.", locked: true }
+      { 
+        id: 1, 
+        title: "The First Night", 
+        duration: "8 min", 
+        description: "Maya notices the same stranger waiting for the last train.", 
+        locked: false, 
+        progress: 100,
+        thumbnail: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-city-traffic-at-night-42525-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Missed Call", 
+        duration: "7 min", 
+        description: "A phone rings between them. Neither wants to answer it.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-young-couple-walking-in-a-park-at-night-42283-large.mp4"
+      },
+      { 
+        id: 3, 
+        title: "Same Train", 
+        duration: "9 min", 
+        description: "They finally speak. Neither tells the truth.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-city-traffic-at-night-42525-large.mp4"
+      },
+      { 
+        id: 4, 
+        title: "Don't Go Yet", 
+        duration: "8 min", 
+        description: "Maya misses her train for the first time.", 
+        locked: true, 
+        progress: 68,
+        thumbnail: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-young-couple-walking-in-a-park-at-night-42283-large.mp4"
+      },
+      { 
+        id: 5, 
+        title: "Platform 6", 
+        duration: "7 min", 
+        description: "Someone else has been watching them.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-city-traffic-at-night-42525-large.mp4"
+      }
     ],
     cast: [
       { name: "Lena Park", character: "Maya", description: "Always knows when to leave—except this time." },
@@ -45,14 +88,31 @@ export const MICRODRAMAS = [
     tags: ["Mystery", "Dark", "Suspense"],
     poster: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-shadows-of-people-walking-in-a-dark-hallway-41544-large.mp4",
     badgeType: "original",
     badge: "BINGESHORTS ORIGINAL",
     rating: "4.8",
     views: "1.8M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "Check In", duration: "8 min", description: "Nina starts her first shift.", locked: false },
-      { id: 2, title: "Do Not Disturb", duration: "7 min", description: "A strange request from the fourth floor.", locked: true }
+      { 
+        id: 1, 
+        title: "Check In", 
+        duration: "8 min", 
+        description: "Nina starts her first shift.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-shadows-of-people-walking-in-a-dark-hallway-41544-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Do Not Disturb", 
+        duration: "7 min", 
+        description: "A strange request from the fourth floor.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-shadows-of-people-walking-in-a-dark-hallway-41544-large.mp4"
+      }
     ],
     cast: [
       { name: "Sarah Lin", character: "Nina", description: "Just needed a summer job." }
@@ -73,14 +133,31 @@ export const MICRODRAMAS = [
     tags: ["Mystery", "Psychological", "Intense"],
     poster: "https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-foggy-forest-with-sun-rays-41559-large.mp4",
     badgeType: "original",
     badge: "BINGESHORTS ORIGINAL",
     rating: "4.7",
     views: "3.1M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The Message", duration: "8 min", description: "Noah gets the text.", locked: false },
-      { id: 2, title: "Evidence Room", duration: "7 min", description: "Noah breaks into the precinct.", locked: true }
+      { 
+        id: 1, 
+        title: "The Message", 
+        duration: "8 min", 
+        description: "Noah gets the text.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-foggy-forest-with-sun-rays-41559-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Evidence Room", 
+        duration: "7 min", 
+        description: "Noah breaks into the precinct.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-foggy-forest-with-sun-rays-41559-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Alice Morgan", role: "Writer", bio: "Master of suspense." },
@@ -99,14 +176,31 @@ export const MICRODRAMAS = [
     tags: ["Funny", "Romance", "Chaotic"],
     poster: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-laughing-together-outdoors-42280-large.mp4",
     badgeType: "trending",
     badge: "#1 THIS WEEK",
     rating: "4.9",
     views: "5.2M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The Deal", duration: "6 min", description: "Desperate times call for desperate measures.", locked: false },
-      { id: 2, title: "Meet the Parents", duration: "7 min", description: "The lie gets bigger.", locked: true }
+      { 
+        id: 1, 
+        title: "The Deal", 
+        duration: "6 min", 
+        description: "Desperate times call for desperate measures.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-laughing-together-outdoors-42280-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Meet the Parents", 
+        duration: "7 min", 
+        description: "The lie gets bigger.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-laughing-together-outdoors-42280-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Chloe Park", role: "Creator", bio: "Writes what she knows." },
@@ -125,14 +219,31 @@ export const MICRODRAMAS = [
     tags: ["Thriller", "Survival", "Intense"],
     poster: "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-man-running-in-a-dark-tunnel-41551-large.mp4",
     badgeType: "original",
     badge: "BINGESHORTS ORIGINAL",
     rating: "4.6",
     views: "1.2M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "Hour 1", duration: "8 min", description: "The run begins.", locked: false },
-      { id: 2, title: "Hour 5", duration: "7 min", description: "First mistake.", locked: true }
+      { 
+        id: 1, 
+        title: "Hour 1", 
+        duration: "8 min", 
+        description: "The run begins.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-man-running-in-a-dark-tunnel-41551-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Hour 5", 
+        duration: "7 min", 
+        description: "First mistake.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-man-running-in-a-dark-tunnel-41551-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "David Chen", role: "Director", bio: "Action specialist." },
@@ -151,14 +262,31 @@ export const MICRODRAMAS = [
     tags: ["Drama", "Suspense", "Mystery"],
     poster: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-elevator-doors-closing-in-a-modern-building-42540-large.mp4",
     badgeType: "trending",
     badge: "TRENDING",
     rating: "4.5",
     views: "2.1M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "Ding", duration: "7 min", description: "The doors open.", locked: false },
-      { id: 2, title: "Eye Contact", duration: "6 min", description: "He saw her.", locked: true }
+      { 
+        id: 1, 
+        title: "Ding", 
+        duration: "7 min", 
+        description: "The doors open.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-elevator-doors-closing-in-a-modern-building-42540-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Eye Contact", 
+        duration: "6 min", 
+        description: "He saw her.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-elevator-doors-closing-in-a-modern-building-42540-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Emily Davis", role: "Writer", bio: "Suspense author." },
@@ -177,14 +305,31 @@ export const MICRODRAMAS = [
     tags: ["Romance", "Feel Good", "Emotional"],
     poster: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-subway-train-arriving-at-the-station-41549-large.mp4",
     badgeType: "active",
     badge: "POPULAR",
     rating: "4.8",
     views: "3.5M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The Routine", duration: "6 min", description: "Another morning, another glance.", locked: false },
-      { id: 2, title: "Dropped Book", duration: "7 min", description: "An excuse to talk.", locked: true }
+      { 
+        id: 1, 
+        title: "The Routine", 
+        duration: "6 min", 
+        description: "Another morning, another glance.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-subway-train-arriving-at-the-station-41549-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Dropped Book", 
+        duration: "7 min", 
+        description: "An excuse to talk.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-subway-train-arriving-at-the-station-41549-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "James Wilson", role: "Creator", bio: "Romantic at heart." },
@@ -203,14 +348,31 @@ export const MICRODRAMAS = [
     tags: ["Romance", "Drama", "Emotional"],
     poster: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-coffee-being-poured-into-a-cup-42287-large.mp4",
     badgeType: "popular",
     badge: "POPULAR",
     rating: "4.7",
     views: "4.1M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The Text", duration: "8 min", description: "Hey, are you free?", locked: false },
-      { id: 2, title: "The Cafe", duration: "9 min", description: "Seeing him again.", locked: true }
+      { 
+        id: 1, 
+        title: "The Text", 
+        duration: "8 min", 
+        description: "Hey, are you free?", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-coffee-being-poured-into-a-cup-42287-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "The Cafe", 
+        duration: "9 min", 
+        description: "Seeing him again.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-coffee-being-poured-into-a-cup-42287-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Laura Martinez", role: "Writer", bio: "Drama queen." },
@@ -229,14 +391,31 @@ export const MICRODRAMAS = [
     tags: ["Romance", "Thriller", "Drama"],
     poster: "https://images.unsplash.com/photo-1616781296564-9dfb51c8939c?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1616781296564-9dfb51c8939c?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hands-signing-a-document-in-an-office-42548-large.mp4",
     badgeType: "popular",
     badge: "POPULAR",
     rating: "4.9",
     views: "6.2M",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "The Offer", duration: "9 min", description: "Sign here.", locked: false },
-      { id: 2, title: "The Party", duration: "10 min", description: "Playing the part.", locked: true }
+      { 
+        id: 1, 
+        title: "The Offer", 
+        duration: "9 min", 
+        description: "Sign here.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1616781296564-9dfb51c8939c?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hands-signing-a-document-in-an-office-42548-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "The Party", 
+        duration: "10 min", 
+        description: "Playing the part.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hands-signing-a-document-in-an-office-42548-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Michael Chang", role: "Director", bio: "Loves a plot twist." },
@@ -255,14 +434,31 @@ export const MICRODRAMAS = [
     tags: ["Mystery", "Drama", "Psychological"],
     poster: "https://images.unsplash.com/photo-1519011985187-444d62641929?q=80&w=1000&auto=format&fit=crop",
     backdrop: "https://images.unsplash.com/photo-1519011985187-444d62641929?q=80&w=2000&auto=format&fit=crop",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-looking-up-at-staircase-in-an-apartment-building-42543-large.mp4",
     badgeType: "new",
     badge: "NEW",
     rating: "4.6",
     views: "900K",
     releaseYear: "2026",
     episodes: [
-      { id: 1, title: "Moving Day", duration: "7 min", description: "Unpacking boxes.", locked: false },
-      { id: 2, title: "Dejavu", duration: "6 min", description: "I swear I know her.", locked: true }
+      { 
+        id: 1, 
+        title: "Moving Day", 
+        duration: "7 min", 
+        description: "Unpacking boxes.", 
+        locked: false,
+        thumbnail: "https://images.unsplash.com/photo-1519011985187-444d62641929?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-looking-up-at-staircase-in-an-apartment-building-42543-large.mp4"
+      },
+      { 
+        id: 2, 
+        title: "Dejavu", 
+        duration: "6 min", 
+        description: "I swear I know her.", 
+        locked: true,
+        thumbnail: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-looking-up-at-staircase-in-an-apartment-building-42543-large.mp4"
+      }
     ],
     cast: [],
     creator: { name: "Nina Patel", role: "Creator", bio: "Loves weird stories." },

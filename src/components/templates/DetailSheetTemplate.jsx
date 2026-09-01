@@ -237,8 +237,16 @@ export default function DetailSheetTemplate({
                     onClick={() => !isLocked && onPlayEpisode(drama, ep.id)}
                     className={`flex gap-4 p-3 rounded-xl border border-white/5 transition-colors ${isLocked ? 'bg-white/[0.02] opacity-70' : 'bg-[#181820] hover:bg-white/10 cursor-pointer active:scale-[0.98]'}`}
                   >
-                    <div className="flex-none w-24 h-16 bg-[#090909] rounded-lg relative overflow-hidden flex items-center justify-center">
-                      <span className="font-display font-black text-white/20 text-3xl absolute -left-1 -bottom-2">{ep.id}</span>
+                    <div className="flex-none w-24 h-16 bg-[#090909] rounded-lg relative overflow-hidden flex items-center justify-center border border-white/10">
+                      <img 
+                        src={ep.thumbnail || drama.backdrop || drama.poster} 
+                        alt={ep.title} 
+                        className="w-full h-full object-cover absolute inset-0 opacity-50 transition-opacity" 
+                        onError={(e) => {
+                          e.target.src = drama.poster;
+                        }}
+                      />
+                      <span className="font-display font-black text-white/30 text-3xl absolute -left-1 -bottom-2">{ep.id}</span>
                       {ep.progress === 100 ? (
                         <Check className="w-5 h-5 text-emerald-500 relative z-10" />
                       ) : !isLocked ? (
@@ -247,7 +255,7 @@ export default function DetailSheetTemplate({
                         <Lock className="w-4 h-4 text-white/50 relative z-10" />
                       )}
                       {ep.progress > 0 && ep.progress < 100 && (
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20">
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20 z-10">
                           <div className="h-full bg-[#f04a23]" style={{ width: `${ep.progress}%` }}></div>
                         </div>
                       )}

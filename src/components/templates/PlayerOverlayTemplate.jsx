@@ -250,14 +250,36 @@ export default function PlayerOverlayTemplate({
         className="relative w-full h-full md:w-[480px] md:h-[90vh] md:rounded-[2.5rem] md:border md:border-white/10 bg-[#090909] overflow-hidden flex flex-col justify-between shadow-2xl"
       >
         
-        {/* VIDEO ARTWORK / SIMULATION LAYER */}
-        <div className="absolute inset-0 z-0">
+        {/* REAL VIDEO MEDIA & ARTWORK LAYER */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-black">
+          {(currentEp?.videoUrl || drama?.videoUrl) ? (
+            <video 
+              key={currentEp?.videoUrl || currentEpId}
+              src={currentEp?.videoUrl || drama?.videoUrl} 
+              poster={currentEp?.thumbnail || drama?.backdrop || drama?.poster}
+              autoPlay={isPlaying}
+              loop
+              muted
+              playsInline
+              className={`w-full h-full object-cover transition-all duration-700 ${
+                isPlaying ? 'scale-105 brightness-95' : 'scale-100 brightness-50'
+              }`}
+              onError={(e) => {
+                // Fallback to backdrop image if video fails to load
+                e.target.style.display = 'none';
+              }}
+            />
+          ) : null}
           <img 
-            src={drama.backdrop || drama.poster} 
-            alt={drama.title}
-            className={`w-full h-full object-cover transition-all duration-700 ${
+            src={currentEp?.thumbnail || drama?.backdrop || drama?.poster} 
+            alt={drama?.title}
+            className={`w-full h-full object-cover transition-all duration-700 absolute inset-0 -z-10 ${
               isPlaying ? 'scale-105 brightness-95' : 'scale-100 brightness-50'
             }`} 
+            onError={(e) => {
+              // Visual fallback container styling
+              e.target.src = 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop';
+            }}
           />
           {/* Subtle Vertical Cinematic Gradients */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90 pointer-events-none" />
